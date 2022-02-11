@@ -1,0 +1,40 @@
+.heading{
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(8, 8, 8);
+    background-color:#2ecc71;
+    padding: 10px;
+}
+.input{
+    background-color: white;
+    border-bottom: 1px solid;
+    border-bottom-color: rgb(185, 182, 182);
+    margin-bottom: 5px;
+    padding: 10px;
+}
+input[type=text]
+{
+    width:50%;
+    border: 1px solid #ccc;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+#paytm{
+    height: 25px;
+    width: 28px;
+    float: left;
+    margin-right: 10px;
+}
+#gpay{
+    width: 60px;
+    height: 40px;
+}
+#ppay{
+    width: 60px;
+    height: 40px;
+}
+input[type=radio]{
+    float: right;
+}

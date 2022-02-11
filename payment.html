@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment1.css">
+    <title>Safe Payment Train booking</title>
+    <script type="text/javascript">
+        function fn1()
+        {
+            alert("Payment Done");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <div id="background">
+                        <h3 class="title">Billing address</h3>
+                    </div>
+                <div class = "Inputbox">
+                    <span>Full name</span>
+                    <input type="text" placeholder="John Doe">
+                </div>
+                <div class = "Inputbox">
+                    <span>Email</span>
+                    <input type="text" placeholder="abc@gmail.come">
+                </div>
+                <div class = "Inputbox">
+                    <span>City</span>
+                    <input type="text" placeholder="Delhi">
+                </div>
+                    <div class="flex">
+                        <div class="Inputbox">
+                            <span>state :</span>
+                            <input type="text" placeholder="India">
+                        </div>
+                        <div class="Inputbox">
+                            <span>zip code</span>
+                            <input type="text" placeholder="123 456">
+                        </div>
+                    </div>
+                </div>
+            
+        
+                <div class="col">
+                    <div id="background">
+                        <h3 class="title">Payment</h3>
+                    </div>
+                <div class="Inputbox">
+                    <span>Cards Accepted</span>
+                    <img src="pay.jpg" alt="">
+                </div>
+                <div class="Inputbox">
+                    <span>Card Number</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="Inputbox">
+                    <span>Exp month</span>
+                    <input type="text" placeholder="Jan">
+                </div>
+                <div class="flex">
+                    <div class="Inputbox">
+                        <span>Exp year</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="Inputbox">
+                        <span>CVV:</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+            </div>
+            <input onclick="fn1()" type="submit" value="proceed to checkout" class="submit-btn">
+        </form>
+    </div>
+
+</body>
+</html>

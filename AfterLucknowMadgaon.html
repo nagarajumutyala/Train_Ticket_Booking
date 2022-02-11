@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+  padding-top: 0.3cm;
+  padding-bottom: 0.3cm;
+  padding-right: 0.3cm;
+  padding-left: 0.3cm;
+  background-color: white;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+  padding-right: 1.7cm;
+  text-align: center;
+}
+.topnav {
+  overflow: hidden;
+  background-color:#EEE8AA;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #EEE8AA;
+}
+
+.topnav a.active {
+  background-color: lightblue;
+  color: white;
+}
+
+
+
+    .h4{
+      text-align: center;
+    }    
+#outer-grid {
+
+display: grid;
+grid-template-rows: 0.3fr 0.3fr;
+grid-template-columns: 0.3fr 0.9fr;
+grid-gap: 3px;
+}
+#outer-grid > div {
+
+background-color:palegoldenrod;
+color:black;
+font-size: 1.1vw;
+padding: 3px;
+}
+#inner-grid {
+
+display: grid;
+grid-template-columns: 0.8fr 0.8fr;
+grid-gap: 3px;
+}
+#inner-grid > div {
+
+background: seagreen;
+padding: 3px;
+color: white;
+}
+
+
+.button {
+background-color: lightblue; /* Green */
+border: none;
+color: white;
+padding: 10px 22px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+.button1 {background-color: #e7e7e7; color: black;} /* Blue */
+.button2 {background-color: #e7e7e7; color: black;}
+.button3 {background-color: #e7e7e7; color: black;}
+.button4 {background-color: #e7e7e7; color: black;}
+
+
+
+
+
+/* Tool bar */
+
+
+.navbar {
+ overflow: hidden;
+  background-color:#EEE8AA; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 15px;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color:black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: orange;
+  
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0.5;
+  background-color: gray;
+  width: 99%;
+  z-index: 1;
+  
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  padding-left: 0.3cm;
+  padding-bottom: 0.3cm;
+  padding-right: 0.3cm;
+  padding-top: 0.3cm;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+    </style>
+</head>
+<body>
+  <img src="clipart393926.png" align="left" width="90px">
+  <br>
+  <h2>Welcome to TRAIN Ticket Booking Website</h2>
+<br>
+  <div class="navbar">
+  <B>  <a href="#home" class="active">Home</a></B>
+  
+      
+  
+  <div class="subnav">
+  <button class="subnavbtn"><B>Trains</B> <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+    
+        <a href="ForeignTouristBooking.html">Foreign Tourist Booking</a>
+        <a href="ConnectingJourneyBooking.html">Connecting Journey Booking</a>
+        <a href="IRCTC_TRAIN.html">IRCTC TRAINS</a>
+        <a href="#careers">PNR Enquiry</a>
+      
+      </div>
+    </div>
+    <a href="SeatAvailability.html"><B>Seat Availability</B></a>
+
+    <div class="subnav">
+      <button class="subnavbtn"><B>Premium Partner</B> <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#bring">Confirmtkt</a>
+        <a href="https://www.ixigo.com/trains">ixigo</a>
+        <a href="https://www.makemytrip.com/railways/">MakeMyTrip-Trains</a>
+        <a href="https://www.easemytrip.com/">EaseMy Trip</a>
+              <a href="https://www.goibibo.com/">Goibibo</a>
+      </div>
+
+    </div> 
+    <div class="subnav">
+      <button class="subnavbtn"><B>More</B> <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="Caas.html">ChatBot as a Service (CaaS)</a>
+        <a href="#link2">Link Your Aadhar</a>
+        <a href="#link3">Ticket Cancellation</a>
+              <a href="#link4">Forgot Your ID</a>
+        <a href="#link4">FORGOT PASSWORD</a>
+  
+      </div>
+    </div>
+    <a href="AboutUs.html"><B>About Us</B></a>
+    <a href="Contact.html"><B>Contact Us</B></a>
+
+    </div>
+
+<br><br>
+<h3>6  Results for LUCKNOW NR  MADGAON | Quota | General </h3>
+<div id="outer-grid">
+  <div>
+  <form action="#">
+    <h4><b>JOURNEY CLASS</b></h4>
+<input type="radio" checked="checked" name="radio">
+    <label class="container">AC First Class (1A)
+      <span class="checkmark"></span>
+    </label><br><br>
+    <input type="radio" name="radio">
+    <label class="container">Second Sitting (2S)
+      <span class="checkmark"></span>
+    </label><br><br>
+    <input type="radio" name="radio">
+    <label class="container">AC 3 Economy (3E)
+      <span class="checkmark"></span>
+    </label><br><br>
+    <input type="radio" name="radio">
+    <label class="container">AC 2 Tier (2A)
+      <span class="checkmark"></span>
+    </label><br><br>
+    <input type="radio" name="radio">
+    <label class="container">AC 3 Tier (3A)
+      <span class="checkmark"></span>
+    </label><br><br>
+    <input type="radio" name="radio">
+    <label class="container">Sleeper (SL)
+      <span class="checkmark"></span>
+    </label><br><br>
+</form></div>
+
+
+  <div id="inner-grid">  
+    <div><b>GKP LTT SF EXP (20104)</b></div>
+    <div> AISHBAGH | LOKMANYATILAK T </div>
+  <button class="button button1">Tue, 15 Feb <a href="form.html"><b>Available-0503 </a></b></button>
+    <button class="button button2">Wed, 16th Feb <a href="form.html"><b>Available-0493</a></b></button>
+    <button class="button button3">Thu, 17th Feb <a href="form.html"><b>Available-0530</a></b></button>
+     <button class="button button4">Fri, 18th Feb <a href="form.html"><b>Available-0550</a></b></button>
+     <button class="button button3">Sat, 19th Feb <b> TRAIN CANCELLED</b></button>
+     <button class="button button4">Sun, 20th Feb <a href="form.html"><b>AC First Class</a></b></button>
+  </div>
+  <div id="inner-grid">
+    <h4> <b>LAP1 Departure Time</b></h4>
+    <p> </p>
+    <button class="button button1"><b>00:00 to 06:00 Early Morning</b></button>
+    <button class="button button2"><b>06:00 to 12:00 Morning</b></button>
+    <button class="button button3"><b>12:00 to 18:00 Mid Day</b></button>
+     <button class="button button4"><b>18:00 to 24:00 Night</b></button>
+  </div>
+  <div id="inner-grid">
+    <div><b>MARU SAGAR EXP (12978)</b></div>
+    <div>PANVEL | MADGAON</div>
+    <button class="button button1">Tue, 15 Feb <a href="form.html"><b>Available-0503</b></a></button>
+    <button class="button button2">Wed, 16 Feb <a href="form.html"><b>Available-0530</b></a></button>
+    <button class="button button3">Thu, 17 Feb <a href="form.html"><b>Available-0523</b></a></button>
+     <button class="button button4">Fri, 18 Feb <a href="form.html"><b>Available-0544</b></a></button>
+    
+  </div>
+
+
+  <div>
+    <form action="#">
+      <h4><b>Via Station</b></h4>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> BURHANPUR</label><br><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> BINA JN</label><br><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> BHUSAVAN JN</label><br><br>
+    <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+    <label for="vehicle4">C SHIVAJI MAH T</label><br><br>
+    <input type="checkbox" id="vehicle5" name="vehicle5" value="Boat">
+    <label for="vehicle5"> ITARSI JN</label><br><br>
+    <input type="checkbox" id="vehicle6" name="vehicle6" value="Boat">
+        <label for="vehicle3"> KHANDWA</label><br><br>
+    <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+    <label for="vehicle4"> LOKMANYATILAK T</label><br><br>
+    
+    
+  </form></div>
+    <div id="inner-grid">
+      <div><b>GKP LTT SF EXP (20104)</b></div>
+      <div> AISHBAGH | LOKMANYATILAK T</div>
+      <button class="button button1">Tue, 15 Feb <a href="form.html"><b>Available-0503</b></a></button>
+      <button class="button button2">Wed, 16 Feb <a href="form.html"><b>Available-0540</b></a></button>
+      <button class="button button3">Thu, 17 Feb <a href="form.html"><b>Available-0530</b></a></button>
+       <button class="button button4">Fri, 18 Feb <a href="form.html"><b>Available-0499</b></a></button>
+       <button class="button button3">Thu, 17 Feb <a href="form.html"><b>Available-0530</b></a></button>
+       <button class="button button4">Fri, 18 Feb <a href="form.html"><b>Available-0499</b></a></button>
+
+       
+    </div>
+
+    <div id="inner-grid">
+      <h4> <b>LAP2 Departure Time</b></h4>
+      <p> </p>
+      <button class="button button1"><b>00:00 to 06:00 Early Morning</b></button>
+      <button class="button button2"><b>06:00 to 12:00 Morning</b></button>
+      <button class="button button3"><b>12:00 to 18:00 Mid Day</b></button>
+       <button class="button button4"><b>18:00 to 24:00 Night</b></button>
+    </div>
+
+    <div id="inner-grid">
+      <div><b>KUSHINAGAR EXP (22537)</b></div>
+      <div>AISHBAGH | LOKMANYATILAK T</div>
+      <button class="button button1">Wed, 16 Feb <a href="form.html"><b>Available-0533</b></a></button>
+      <button class="button button2">Thu, 17 Feb <a href="form.html"><b>Available-0500</b></a></button>
+     <button class="button button3">Fri, 18 Feb <a href="form.html"><b>Available-0530</b></a></button>
+       <button class="button button4">Sat, 19 Feb <a href="form.html"><b>Available-0503</b></a></button>
+    </div>
+
+    <div>
+      <form action="#">
+        <h4><b>JOURNEY CLASS</b></h4>
+    <input type="radio" checked="checked" name="radio">
+        <label class="container">DURONTO
+          <span class="checkmark"></span>
+        </label><br><br>
+        <input type="radio" name="radio">
+        <label class="container">GARIB RATH
+          <span class="checkmark"></span>
+        </label><br><br>
+        <input type="radio" name="radio">
+        <label class="container">OTHER
+          <span class="checkmark"></span>
+        </label><br><br>
+        <input type="radio" name="radio">
+        <label class="container">JANSHARABDI
+          <span class="checkmark"></span>
+        </label><br><br>
+        <input type="radio" name="radio">
+        <label class="container">SHATABDI
+          <span class="checkmark"></span>
+        </label><br><br>
+        <input type="radio" name="radio">
+        <label class="container">SPECIAL
+          <span class="checkmark"></span>
+        </label><br><br>
+    </form></div>
+
+    <div id="inner-grid">
+        <div><b>RAPTISAGAR EXP (12512)</b></div>
+        <div>MGR CHENNAI CTL  | BADSHAHNAGAR </div>
+        <button class="button button1">Tue, 15 Feb <a href="form.html"><b>Available-0503</b></a></button>
+        <button class="button button2">Wed, 16 Feb <a href="form.html"><b>Available-0499</b></a></button>
+        <button class="button button3">Thu, 17 Feb <a href="form.html"><b>Available-0530</b></a></button>
+         <button class="button button4">Fri, 18 Feb <a href="form.html"><b>Available-0533</b></a></button>
+         <button class="button button3">Sat, 19 Feb <a href="form.html"><b>Available-0542</b></a></button>
+         <button class="button button4">Sun, 20 Feb <a href="form.html"><b>Available-0555</b></a></button>
+      </div>
+
+      <div id="inner-grid">
+        <h4> <b>Departure Time</b></h4>
+        <p> </p>
+        <button class="button button1"><b>00:00 to 06:00 Early Morning</b></button>
+        <button class="button button2"><b>06:00 to 12:00 Morning</b></button>
+        <button class="button button3"><b>12:00 to 18:00 Mid Day</b></button>
+         <button class="button button4"><b>18:00 to 24:00 Night</b></button>
+      </div>
+
+      <div id="inner-grid">
+        <div><b>YPR LKO EXP (12539)</b></div>
+        <div> PERAMBUR | LUCKNOW NR</div>
+        <button class="button button1">Tue, 15 Feb <a href="form.html"><b>Available-0503</b></a></button>
+        <button class="button button2">Wed, 16 Feb <a href="form.html"><b>Available-0300</b></a></button>
+        <button class="button button3">Thu, 17 Feb <a href="form.html"><b>Available-0530</b></a></button>
+         <button class="button button4">Fri, 18 Feb <a href="form.html"><b>Available-0533</b></a></button>
+         <button class="button button3">Sat, 19 Feb <a href="form.html"><b>Available-0555</b></a></button>
+         <button class="button button4">Sun, 20 Feb <a href="form.html"><b>Available-0503</b></a></button>          
+      </div>
+</div>
+</body>
+</html>

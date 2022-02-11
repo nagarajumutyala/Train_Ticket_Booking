@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="train_between_station.css" class="ref">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a id="n2" href="welcompage.html"><h1>Indian Railway Enquiry</h1></a></li>
+                <li><a id="n2" href="pnr1.html"><h4>PNR Enquiry</h4></a></li>
+                <li><a id="n2" href="train_between_station.html"><h4>Reserved Train Between Stations</h4></a></li>
+                <!-- <li><a id="n2" href=""><h4>Seat Availability</h4></a></li> -->
+                <!-- <li><a id="n2" href=""><h4>Fare Enquiry</h4></a></li> -->
+                <li><a id="n2" href="Reserved_Train.html"><h4>Reserved Train Schedule</h4></a></li>
+            </ul>
+    </nav>
+    <div class="info">
+        <nav>
+            <a href="index1.html">
+              <img src="newlogo.jpg" class="logo">
+              </a>
+              <ul>
+              <li><h1 id="heading">INDIAN RAILWAY PASSENGER RESERVATION ENQUIRY</h1></li>
+            </ul>
+              <!-- <img src="logo22.jpg" class="logo22"> -->
+        
+        </nav>
+        <div class="heading2">
+            <h2 id="h3">Reserved Train Between Stations</h2>
+
+        </div>
+    </div>
+    <div class="info2">
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            <label for="Journey date">
+            Enter Journey Date:<br><input type="date" name="date1" id="jdate">
+            </label><br>
+            Enter Source Station:<br><input type="text" name="source" id="jdate"><br>
+            Enter Destination Station:<br><input type="text" name="destination" id="jdate"><br>
+           <input type="submit" class="btn1"  name="buttonbet" value="Go">
+        </form>
+
+    </div>
+    </div>
+</body>
+<script>
+    function validateForm() 
+    {
+      let x = document.forms["myForm"]["date1"].value;
+      let y = document.forms["myForm"]["source"].value;
+      let z = document.forms["myForm"]["destination"].value;
+      if (x == "") 
+      {
+        alert("please enter the search date");
+        return false;
+      }
+      else if(y == "")
+      {
+        alert("please enter the source station");
+        return false;
+      }
+      else(z == "")
+      {
+          alert("please enter the destination station");
+          return false;
+      }
+   }
+</script>
+</html>

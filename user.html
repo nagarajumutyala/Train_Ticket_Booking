@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user.css">
+    <title>Document</title>
+    <script type="text/javascript">
+        function fn1()
+        {
+            var rd1 = document.getElementById("rd1");
+            var rd2 = document.getElementById("rd2");
+            if(rd1.checked==true)
+            {
+                alert("The channel selected is"+rd1.value); 
+                <a href="payment.html"></a>
+            } 
+            else if(rd2.checked==true)
+            {
+                alert("The channel selected is"+rd2.value);
+                <a href="upi.html"></a>
+            }
+            else
+            {
+                alert("No channel selected");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="background">
+        <div id="top">
+            <image id=train-logo src="newlogo.jpg">
+            <!-- <image id=irctc-logo src="C:\Users\supratik_biswas\Downloads\irctc.png"> -->
+        </div>
+        <form>
+            <br>
+            <div class="heading">
+                <h2>Passenger Details</h3>
+            </div>
+            <br>
+            <div class="details">
+                <div class="Input">
+                    <span>Name</span>
+                    <input type="text" name="name" placeholder="Name" size="30" required >  
+                </div>
+                <div class="Input">
+                    <span>Age</span>
+                    <input type="text" name="age" placeholder="Age" size="2" required > 
+                </div>
+                <br>
+                <div class="Input">
+                    <span>Gender: </span>
+                    <input type="radio" name="Gender">
+                    <span>Male</span>
+                    <input type="radio" name="Gender">
+                    <span>Female</span>
+                    <input type="radio" name="Gender">
+                    <span>Others</span>
+                </div>
+            </div>
+            <br>
+            <div class="heading">
+                <h3>Choices of Payment</h3>
+            </div>
+            <br>
+            <div class="Payment">
+                <input type="radio" name="Choice" id="rd1" value=" Card Payment">
+                <span>Debit Card/Credit Card/Net Banking</span>
+                <br>
+                <input type="radio" name="Choice" id="rd2" value=" UPI Payment">
+                <span>Paytm Wallet/UPI</span>
+            </div>
+            <br>
+            <button class="button1" type="menu">
+                <a href="#">Back</a>
+            </button>
+            <button onclick="fn1()" class="button2" type="submit"> 
+                <a href="payment.html">Pay through Card</a>
+            </button>
+            <button onclick="fn1()" class="button2" type="submit"> 
+                <a href="upi.html">Pay through UPI</a>
+            </button>
+        </form>
+    </div>
+</body>
+</html>

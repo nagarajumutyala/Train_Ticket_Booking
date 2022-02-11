@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        
+            padding-left: 150px;
+  padding-right: 160px;
+}
+        h2{
+            text-align: center;
+        }
+        #myHeader {
+  background-color: #EEE8AA;
+  color: black;
+  padding: 20px;
+  text-align: center;
+        }
+        #my{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>INDIAN RAILWAYS PASSENGER RESERVATION ENQUIRY</h2>
+    <img src="newlogo.jpg" align="left" width="100px">
+        <!-- <img src="IRCTC1.gif" align="right" width="100px"> -->
+<br>
+        <br>
+        <marquee>
+          <h3>  Please Help Indian Railways and government of india in moving towards a digitized and cashless economy. Eradicatre black money.
+        </h3>  </marquee>
+        <h3 id="myHeader">Accommodation Availability Enquiry On Trains Till Departure
+        </h3>
+       
+        
+<p id="demo"></p>
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+<br>
+<h4 id="my">
+<form action="/action_page.php">
+    <label for="fname">Enter Train Number  </label>
+    <input type="text" id="fname" name="fname" placeholder="Train Number"><br><br>
+    <label for="fname">Enter Journey Date  </label>
+    <input type="datetime-local" id="fname" name="fname"><br><br>
+    <label for="lname">Enter Source Station  </label>
+    <input type="text" id="lname" name="lname" placeholder="Enter Source Station"><br><br>
+    <label for="lname">Enter Destination Station  </label>
+    <input type="text" id="lname" name="lname" placeholder="Enter Destination Station"><br>
+    <br>
+<label for="cars">Enter Class</label>
+<select name="cars" id="cars">
+  <option value="volvo">AC First Class (1A)</option>
+  <option value="saab">Second Sitting (2S)</option>
+  <option value="opel">AC 3 Economy (3E)</option>
+  <option value="audi">AC 2 Tier (2A)</option>
+  <option value="audi">AC 3 Tier (3A)</option>
+  <option value="audi">Sleeper (SL)</option>
+</select>
+<br><br>
+<label for="cars">Enter Quota</label>
+<select name="cars" id="cars">
+  <option value="volvo">Tatkal Quota</option>
+  <option value="saab">Ladies Quota</option>
+  <option value="opel">Defence Quota</option>
+  <option value="audi">Foreign Tourist Quota </option>
+  <option value="audi">Handicaped Quota</option>
+  <option value="audi">General Quota</option>
+</select>
+  <br><br>  <input type="submit" value="Go">
+<br><br>
+</h4>
+<hr>
+<hr>
+
+<p>Copyright © 2017, Centre For Railway Information Systems, Designed and Hosted by CRIS</p>
+  </form>
+</body>
+</html>

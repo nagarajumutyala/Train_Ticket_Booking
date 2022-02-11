@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    height: 10vh;
+    width: 100%;
+    /* position: fixed; */
+    background-color: #EEE8AA;
+    background-position: center;
+    padding-top: 20px;
+    color: rgb(12, 1, 1);
+}
+nav{
+    display: flex;
+    align-items: center;
+    /* color: black; */
+
+}
+nav ul li{
+    display: inline-block;
+    margin: 5px 35px;
+    /* justify-content: space-between; */
+    /* color: rgb(12, 1, 1); */
+}
+.container #n2{
+    color: rgb(14, 2, 2);
+    text-decoration: none;
+}
+.info .logo{
+    height: 20vh;
+    width: 10vw;
+    margin-top: 30px;
+    margin-left: 10px;
+    float: left;
+}
+.info #heading{
+    text-align: center;
+    padding-left: 90px;
+    color: rgb(15, 15, 15);
+}
+.info2{
+    margin-top: 20px;
+    margin-left: 400px;
+    color: black;
+}
+.info .heading2 #h3{
+    color: #fff;
+    text-align: center;
+    height: 6vh;
+    width: 50vw;
+    background-color: #2E8B57;
+    margin-left: 30%;
+}
+.info2 .train{
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    
+}
+.info2 .btn1{
+    text-decoration: none;
+    border: 1px solid rgb(248, 243, 243);
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-left: 170px;
+    margin-top: 30px;
+    background-color: #2E8B57;
+    color: #fff;
+    
+}

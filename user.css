@@ -1,0 +1,72 @@
+/* #irctc-logo{
+    opacity:0.2;
+    float: right;
+} */
+/* #train-logo{
+    opacity: 0.2;
+} */
+/* #top{
+    background-color: #eaec4b;
+} */
+img{
+    height: 100px;
+    width: 100px;
+}
+*{
+    font-family: 'Poppins',sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline:none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+.details{
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    min-height: 100 vh;
+    border: 5px solid rgba(163, 161, 161, 0.8);
+    font-family: g;
+    border-radius: 10px;
+}
+.Payment{
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    min-height: 100 vh;
+    border: 5px solid rgba(163, 161, 161, 0.8);
+    border-radius: 10px;
+}
+button{
+    background-color: white;
+    border: 2px solid seagreen;
+    padding: 10px 24px;
+}
+.button1:hover{
+    background-color: greenyellow;
+    color: rgb(42, 8, 236);
+}
+.button2:hover{
+    background-color: greenyellow;
+    color: rgb(42, 8, 236);
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+input[type=radio] {
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+.heading{
+    padding: 20px;
+    border: 5px solid rgba(163, 161, 161, 0.8);
+    border-radius: 10px;
+    background-color: seagreen;
+    color: #fff;
+}
+

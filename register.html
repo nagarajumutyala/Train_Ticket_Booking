@@ -1,0 +1,165 @@
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:seagreen;  
+}  
+.container {  
+    padding: 50px;  
+  background-color:palegoldenrod;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color:seagreen;  
+  color:white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+.error
+{
+color: red;
+size: 80%;
+}
+.hidden
+{
+display:none;
+}
+
+</style>  
+</head>  
+<body>  
+  
+<form    id="myform"  onSubmit = "return checkPassword(this)"> 
+  
+  <div class="container">  
+    
+  <center>  <h1>  Registeration Form</h1> </center>  
+   <hr>
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required >   
+  
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required >   
+
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+<div class="p-4">
+
+     
+
+         <div>
+         <label for="myform_phone">Phone:</label>
+         <input type="text" id="myform_phone" name="phone" />
+           <div id="phone_error" class="error hidden">Please enter a valid phone number</div>
+         </div>
+         </div>
+Current Address :  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="password1" required>  
+  
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="password" placeholder="Retype Password" name="password2" required>  
+  
+    <div class="mt-2">
+    <button type="submit" class="registerbtn"  onclick="myFunction()"><b>Register</b></button>
+    </div>
+</form>  
+
+    
+
+</body>  
+<script>
+
+function validatePhoneNumber(input_str) {
+var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+return re.test(input_str);
+}
+function validateForm(event) {
+var phone = document.getElementById('myform_phone').value;
+if (!validatePhoneNumber(phone)) {
+    document.getElementById('phone_error').classList.remove('hidden');
+} else {
+    document.getElementById('phone_error').classList.add('hidden');
+    alert("Successfuly Registered")
+}
+event.preventDefault();
+}
+document.getElementById('myform').addEventListener('submit', validateForm);
+
+
+
+
+
+
+		
+  // Function to check Whether both passwords
+  // is same or not.
+  function checkPassword(form) {
+    password1 = form.password1.value;
+    password2 = form.password2.value;
+
+    // If password not entered
+    if (password1 == '')
+      alert ("Please enter Password");
+      
+    // If confirm password not entered
+    else if (password2 == '')
+      alert ("Please enter confirm password");
+      
+    // If Not same return False.	
+    else  if (password1 != password2) {
+      alert ("\nPassword did not match: Please try again...")
+      return false;
+    }
+
+    // If same return True.
+    else{
+      alert("password saved sucessfully")
+      return true;
+    }
+  }
+</script>
+
+
+
+</html>  

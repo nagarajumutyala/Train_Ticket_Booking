@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../dist/payment.js"></script>
+  <style type="text/css" media="screen">
+    input.invalid {
+      border: 2px solid red;
+    }
+
+    .validation.failed:after {
+      color: red;
+      content: 'Validation failed';
+    }
+
+    .validation.passed:after {
+      color: seagreen;
+      content: 'Validation passed';
+    }
+    *{
+    font-family: 'Poppins',sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline:none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100 vh;
+    padding-left: 10px;
+}
+
+.container form{
+    padding:20 px;
+    width:700 px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col{
+    flex: 1 1 250px; 
+}
+.container form .row .col .title{
+    font-size: 50 px;
+    color:white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-transform:uppercase;
+}
+#background{
+    background-color: seagreen;
+}
+.container form .row .col .Inputbox{
+    margin:15px 0;
+}
+
+.container form .row .col .Inputbox span{
+    margin-bottom: 5px;
+    display: block;
+}
+
+.container form .row .col .Inputbox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding:10px 15px;
+    font-size: 15px;
+    padding-left: 10px;
+    text-transform: none;
+}
+
+.container form .row .col .Inputbox input:focus{
+    border:1px solid #000;
+    padding-left: 10px;
+}
+
+.container form .row .col .flex{
+    display: flex;
+    gap: 15px;
+    padding-left: 10px;
+}
+
+.container form .row .col .Inputbox img{
+    height:34px;
+    margin-top: 5px;
+    padding-left: 10px;
+    filter: drop-shadow(0 0 1px #000);
+}
+.container form .submit-btn{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background:seagreen;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+    background: #2ecc71;
+}
+/* here*/
+input.invalid {
+    border: 2px solid red;
+  }
+
+  .validation.failed:after {
+    color: red;
+    content: 'Validation failed';
+  }
+
+  .validation.passed:after {
+    color: seagreen;
+    content: 'Validation passed';
+  }
+  body{
+    background-color: lightyellow;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form novalidate autocomplete="on">
+      <div class="row">
+        <div class="col">
+          <div id="background">
+            <h3 class="title">Billing address</h3>
+          </div>
+          <div class = "Inputbox">
+            <span>Full name</span>
+            <input type="text" placeholder="John Doe">
+          </div>
+          <div class = "Inputbox">
+            <span>Email</span>
+            <input type="text" placeholder="abc@gmail.come">
+          </div>
+          <div class = "Inputbox">
+              <span>City</span>
+              <input type="text" placeholder="Delhi">
+          </div>
+          <div class="flex">
+                  <div class="Inputbox">
+                      <span>state :</span>
+                      <input type="text" placeholder="Karnataka">
+                  </div>
+                  <div class="Inputbox">
+                      <span>zip code</span>
+                      <input type="text" placeholder="123 456">
+                  </div>
+          </div>
+        </div>
+            <div class="col">
+              <div id="background">
+                <h3 class="title">Payment</h3>
+              </div><br>
+              <div class="amount-placeholder">
+                <span>$</span>
+                <span>500.00</span>
+            </div>
+              <div class="Inputbox">
+                <span>Card number</span>
+                <input type="text" class="cc-number" pattern="\d*" x-autocompletetype="cc-number" placeholder="Card number" required>
+              </div>
+          
+              <div class="Inputbox">
+                <span>Expiry Date</span>
+
+                <input type="text" class="cc-exp" pattern="\d*" x-autocompletetype="cc-exp" placeholder="Expires MM/YY" required maxlength="9">
+              </div>
+    
+              <div class="Inputbox">
+                <span>CVV</span>
+                <input type="text" class="cc-cvc" pattern="\d*" x-autocompletetype="cc-csc" placeholder="Security code" required  autocomplete="off">
+              </div>
+<div class="Inputbox">          
+     <a href="file:///C:/Users/chandana_nagaraju/Project/Railway_Ticketing/simple-html-invoice-template-master/invoice.html">Proceed to payment</a>
+</div>
+ 
+            </div>
+      
+
+
+      </div>
+    </form>
+  </div>
+    
+
+    
+  </form>
+
+
+  <script>
+    var J = Payment.J,
+      numeric = document.querySelector('[data-numeric]'),
+      number = document.querySelector('.cc-number'),
+      exp = document.querySelector('.cc-exp'),
+      cvc = document.querySelector('.cc-cvc'),
+      validation = document.querySelector('.validation');
+
+    Payment.restrictNumeric(numeric);
+    Payment.formatCardNumber(number, 16);
+    Payment.formatCardExpiry(exp);
+    Payment.formatCardCVC(cvc);
+
+    document.querySelector('form').onsubmit = function(e) {
+      e.preventDefault();
+      J.toggleClass(document.querySelectorAll('input'), 'invalid');
+      J.removeClass(validation, 'passed failed');
+
+      var cardType = Payment.fns.cardType(J.val(number));
+
+      J.toggleClass(number, 'invalid', !Payment.fns.validateCardNumber(J.val(number)));
+      J.toggleClass(exp, 'invalid', !Payment.fns.validateCardExpiry(Payment.cardExpiryVal(exp)));
+
+      J.toggleClass(cvc, 'invalid', !Payment.fns.validateCardCVC(J.val(cvc), cardType));
+
+      if (document.querySelectorAll('.invalid').length) {
+        J.addClass(validation, 'failed');
+      } else {
+        J.addClass(validation, 'passed');
+      }
+    }
+  </script>
+</body>
+</html>

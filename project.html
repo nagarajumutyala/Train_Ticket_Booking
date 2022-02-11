@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>    
+
+#outer-grid {
+display: grid;
+grid-template-rows: 1fr 1fr;
+grid-template-columns: 0.5fr 0.9fr;
+grid-gap: 4px;
+}
+
+#outer-grid > div {
+background-color:lightskyblue;
+color: black;
+font-size: 1vw;
+padding: 7px;
+}
+
+#inner-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 5px;
+}
+
+#inner-grid > div {
+background:lightgrey;
+padding: 8px;
+}
+
+.button {
+background-color:lightgrey; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+p{
+  font-size: 70px;
+}
+
+.button1 {background-color: #e7e7e7; color: black;} /* Blue */
+.button2 {background-color: #e7e7e7; color: black;}
+.button3 {background-color: #e7e7e7; color: black;}
+.button4 {background-color: #e7e7e7; color: black;}
+</style>
+
+
+<body><br><br><br>
+<b><p>2 Results for CHENNAI EGMORE  LUCKNOW NR | Wed, 19 Jan 2022 For Quota | General</p></b><br><br>
+<div id="outer-grid">
+  <div>
+  <form action="/action_page.php">
+  <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> AC First Class (1A)</label><br><br>
+  <input type="radio" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Second Sitting (2S)</label><br><br>
+  <input type="radio" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> AC 3 Economy (3E)</label><br><br>
+  <input type="radio" id="vehicle4" name="vehicle4" value="Boat">
+  <label for="vehicle4"> AC 2 Tier (2A)</label><br><br>
+  <input type="radio" id="vehicle5" name="vehicle5" value="Boat">
+  <label for="vehicle5"> AC 3 Tier (3A)</label><br><br>
+  <input type="radio" id="vehicle6" name="vehicle6" value="Boat">
+  <label for="vehicle6"> Sleeper (SL)</label><br><br>
+  <p>Train Type</p>
+</form></div>
+  <div id="inner-grid">
+  
+    <div><b>RAPTISAGAR EXP (12512)</b></div>
+    <div>23:35 | MGR CHENNAI CTL | Wed 19 Jan    10:39 | BADSHAHNAGAR | Fri 21 Jan</div>
+    <div><a href="#">Second Sitting</a></div>
+    <div><a href="#">Sleeper</a></div>
+   <div><a href="#"> Ac3 Economy</a></div>
+   <div><a href="#">Ac3 Tier</a></div>
+   <div> <a href="#">Ac2 Tier</a></div>
+   <div> <a href="#"> Ac 1st Class</a> </div>
+  </div>
+  <div id="inner-grid">
+    <button class="button button1"><b><h1>00:00 to 06:00 Early Morning</h1></b></button>
+    <button class="button button2"><b><h1>06:00 to 12:00 Morning</h1></b></button>
+    <button class="button button3"><b><h1>12:00 to 18:00 Mid Day</h1></b></button>
+     <button class="button button4"><b><h1>18:00 to 24:00 Night</h1></b></button>
+  </div>
+  <div id="inner-grid">
+    <div><b>YPR LKO EXP (12539)</b></div>
+    <div>19:40 | PERAMBUR | Wed 19 Jan       11:15 | LUCKNOW NR | Fri 21 Jan</div>
+    <div><a href="#">Second Sitting</a></div>
+    <div><a href="#">Sleeper</a></div>
+   <div><a href="#">Ac3 Tier</a></div>
+   <div> <a href="#">Ac2 Tier</a></div>
+  </div>
+</div>
+
+
+ 
+</body>
+</html>

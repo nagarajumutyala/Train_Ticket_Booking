@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="upi.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+    <script type="text/javascript">
+        function fn1()
+        {
+            alert("Payment Done");
+        }
+    </script>
+</head>
+<body>
+    <div class="upi">
+        <h3 class="heading">PREFERRED UPI PAYMENT</h3>
+        <form>
+            <div class="input">
+                <img id="paytm" src="paytmm.png">
+                <span>Paytm UPI</span>
+                <input type="text" placeholder="xxxxxxxxxx@paytm">
+            </div>
+            <br>
+            <div class="input">
+                <img id="paytm" src="paytmm.png">
+                <span>Paytm Wallet</span>
+                <input type="text" placeholder="xxxxxxxxxx">
+            </div>
+            <br>
+            <button class="button1" type="menu">
+                <a href="#">Back</a>
+            </button>
+            <button onclick="fn1()" class="button2" type="submit">Submit</button>
+            <h3 class="heading">OTHER UPI METHODS</h3>
+            <a href="gpay.html">
+                <img id="gpay" src="gpay.png">
+            </a>
+            <a href="ppay.html">
+                <img id="gpay" src="phonepe.png">
+            </a>
+            <a href="apay.html">
+                <img id="gpay" src="apayy.png">
+            </a>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      .container .row .col-12 .tabletable-bordered tr th{
+          border: 1px solid black;
+         border-collapse: collapse;
+       }
+  .container .row .col-12 .tabletable-bordered tr th td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  }
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-top: .5em;
+    padding-bottom: .5em;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+.tabletable-bordered{
+    margin-top: 5%;
+    width: 60%;
+    /* height: 50px; */
+    padding: 20px 0px;
+
+}
+
+.nav1{
+    height: 8vh;
+    width: 100%;
+    background-color: #EEE8AA;
+    background-position: center;
+    padding-top: 20px;
+    color: rgb(19, 18, 18);
+    padding: 0PX, 2 0PX;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.nav1 nav ul li{
+    display: inline-block;
+    margin: 5px 35px;
+    color: black;
+}
+.nav1 nav ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+    </style>
+    <div class="nav1">
+    <nav>
+        <ul>
+            <li><a id="n2" href="index1.html"><h3>HOME  </h3></a></li>
+            <li><a id="n2" href="AboutUs.html"><h3>ABOUT US   </h3></a></li>
+            <li><a id="n2" href="Contact.html"><h3>CONTACT US   </h3></a></li>
+            <li><a id="n2" align="right" href="index1.html"><h3>LOGOUT   </h3></a></li>
+        </ul>
+</nav>
+</div>
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+              <center>
+            <table class="tabletable-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Train no</th>
+                  <th scope="col">Train Name</th>
+                  <th scope="col">Source</th>
+                  <th scope="col">Destination</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">20104</th>
+                  <td>GKP LTT SF EXP</td>
+                  <td>LUCKNOW</td>
+                  <td>MADGAON</td>
+                  <td>160</td>
+                  <td>
+                    <button type="button" class="btn btn-primary"><i class="fa fa-eye"></i></button>
+                    <button type="button" class="btn btn-success"><i class="fa fa-edit"></i></button>
+                  <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">22537</th>
+                  <td>KUSHINAGAR EXP</td>
+                  <td>AISHBAGH</td>
+                  <td>LOKMANYATILAK </td>
+                  <td>160</td>
+                  <td>
+                    <button type="button" class="btn btn-primary"><i class="fa fa-eye"></i></button>
+                    <button type="button" class="btn btn-success"><i class="fa fa-edit"></i></button>
+                  <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">12512</th>
+                  <td>RAPTISAGAR EXP</td>
+                  <td>MGR CHENNAI CTL</td>
+                  <tD>BADSHAHNAGAR</tD>
+                  <td>150</td>
+                  <td>
+                    <button type="button" class="btn btn-primary"><i class="fa fa-eye"></i></button>
+                    <button type="button" class="btn btn-success"><i class="fa fa-edit"></i></button>
+                  <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                  </td>
+                </tr>
+                <tr>
+                    <th scope="row">12539</th>
+                    <td>YPR LKO EXP</td>
+                    <td>PERAMBUR</td>
+                    <tD>LUCKNOW</tD>
+                    <td>150</td>
+                    <td>
+                      <button type="button" class="btn btn-primary"><i class="fa fa-eye"></i></button>
+                      <button type="button" class="btn btn-success"><i class="fa fa-edit"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+        </center>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
